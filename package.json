@@ -2,10 +2,10 @@
   "name": "mern_ecomm",
   "version": "1.0.0",
   "description": "",
-  "main": "server.ts",
+  "main": "server.js",
   "scripts": {
-    "start": "node backend/server.ts",
-    "server": "nodemon backend/server.ts"
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
   },
   "author": "FumiMelvinDev",
   "license": "MIT",
