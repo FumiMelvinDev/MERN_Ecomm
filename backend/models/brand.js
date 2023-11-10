@@ -1,16 +1,17 @@
 const mongoose = require('mongoose');
 const { sluggerPlugin } = require('mongoose-slugger-plugin');
 
-schema.index({ name: 1, slug: 1 }, { name: 'name_slug', unique: true });
+// sluggerPlugin.schema.index({ name: 1, slug: 1 }, { name: 'name_slug', unique: true });
 
-schema.plugin(sluggerPlugin, {
-    slugPath: 'slug',
-    generateFrom: ['name'],
-    maxLength: 10,
-    index: 'name_slug'
-});
 
-const brandSchema = mongoose.create.schema({
+// schema.plugin(sluggerPlugin, {
+//     slugPath: 'slug',
+//     generateFrom: ['name'],
+//     maxLength: 10,
+//     index: 'name_slug'
+// });
+
+const brandSchema = mongoose.Schema({
     name: {
         type: String,
         required: [true, 'Enter brand name'],

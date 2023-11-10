@@ -11,6 +11,8 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
+// Routes
+app.use('/api/brands', require('./routes/Brand'))
 
 app.use(errorHandler)
 app.listen(port, () => console.log(`Server started on port ${port}`))

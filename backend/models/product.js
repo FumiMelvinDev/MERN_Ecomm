@@ -10,7 +10,7 @@ schema.plugin(sluggerPlugin, {
     index: 'name_slug'
 });
 
-const productSchema = mongoose.create.schema({
+const productSchema = mongoose.Schema({
     name: {
         type: String,
         required: [true, 'Enter product name'],
